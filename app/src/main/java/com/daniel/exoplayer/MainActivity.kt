@@ -28,10 +28,6 @@ import androidx.media3.exoplayer.source.MediaSource
 import androidx.media3.ui.PlayerView
 import com.daniel.exoplayer.ui.theme.ExoPlayerTheme
 
-const val EXAMPLE_VIDEO_URI = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-const val EXAMPLE_RTSP_URI = "rtsp://admin:admin@192.168.1.115:1935"
-const val EXAMPLE_RTSP_URI2 = "rtsp://192.168.1.213:8554/stream1"
-const val EXAMPLE_RTSP_URI3 = "rtsp://172.24.10.11:8554/stream1"
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -70,7 +66,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
  *
  * @see EXAMPLE_VIDEO_URI Replace with the actual URI of the video to be played.
  */
-@OptIn(UnstableApi::class)
+const val EXAMPLE_VIDEO_URI = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
 @Composable
 fun ExoPlayerView() {
     // Get the current context
